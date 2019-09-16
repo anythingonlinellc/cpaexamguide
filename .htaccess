@@ -1,0 +1,259 @@
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 2 month"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/javascript "access 1 month"
+ExpiresByType application/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 week"
+</IfModule>
+## EXPIRES CACHING ##
+
+
+# compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4.0[678] no-gzip
+BrowserMatch bMSIE !no-gzip !gzip-only-text/html
+
+# Or, compress certain file types by extension:
+<files *.html>
+SetOutputFilter DEFLATE
+</files>
+
+# Loop Stopping Code
+RewriteCond %{REQUEST_URI} ^/(stats/|missing\.html|failed_auth\.html|error/).* [NC]
+RewriteRule .* - [L]
+RewriteCond %{ENV:REDIRECT_STATUS} 200
+RewriteRule .* - [L]
+
+<Files *.mp3>
+SetEnv no-gzip 
+</Files>
+
+<FilesMatch "\.(ttf|ttc|otf|eot|woff|svg|pfa|ps)$">
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "*"
+        Header set Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+        Header set Access-Control-Allow-Methods "GET"
+    </IfModule>
+</FilesMatch>
+
+RewriteCond %{HTTP_USER_AGENT} libwww-perl.* 
+RewriteRule .* – [F,L]
+
+#Force www:
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^cpaexamguide.com [NC]
+RewriteRule ^(.*)$ https://www.cpaexamguide.com/$1 [L,R=301]
+
+#Redirect http to https
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+# This tag ensures the rewrite module is loaded
+<IfModule mod_rewrite.c>
+  # enable the rewrite engine
+  RewriteEngine On
+  # Set your root directory
+  RewriteBase /
+
+  # remove the .html extension
+  RewriteCond %{THE_REQUEST} ^GET\ (.*)\.html\ HTTP
+  RewriteRule (.*)\.html$ $1 [R=301]
+
+  # remove index and reference the directory
+  RewriteRule (.*)/index$ $1/ [R=301]
+
+  # remove trailing slash if not a directory
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} /$
+  RewriteRule (.*)/ $1 [R=301]
+
+  # forward request to html file, **but don't redirect (bot friendly)**
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteRule (.*) $1\.html [L]
+</IfModule>
+
+ErrorDocument 404 https://www.cpaexamguide.com/
+
+#QUIZZES
+redirect 301 /quiz/quiz-site https://quiz.cpaexamguide.com/sf/d9addd22
+redirect 301 /free-book https://www.amazon.com/dp/B0728N9RZS
+redirect 301 /free-cpa-class https://www.cpaexamguide.com/learn/uceg-method-info/
+
+#AFFILIATE CODES
+redirect 301 /out/cpaexcel-academic http://www.linkconnector.com/ta.php?lc=084825038045004557&atid=CPAEXCEL_CLASS&url=http://www.efficientlearning.com/cpa/partners/papp/
+redirect 301 /out/cpaexcel-flashcards http://www.linkconnector.com/ta.php?lc=084825000012004557&url=http://www.efficientlearning.com/cpa/products/flash-cards/
+redirect 301 /out/cpaexcel-gold http://www.linkconnector.com/ta.php?lc=084825038045004557&atid=CPAEXCEL_GOLD&url=http://www.efficientlearning.com/cpa/products/gold-cpa-review-course/
+redirect 301 /out/cpaexcel-international http://www.linkconnector.com/ta.php?lc=084825038045004557&atid=CPAEXCEL_INTL&url=http://www.efficientlearning.com/cpa/products/international-cpa-exam-guide/
+redirect 301 /out/cpaexcel-platinum http://www.linkconnector.com/ta.php?lc=084825038045004557&atid=CPAEXCEL_PLATINUM&url=http://www.efficientlearning.com/cpa/products/platinum-cpa-review-course/
+redirect 301 /out/cpaexcel-silver http://www.linkconnector.com/ta.php?lc=084825038045004557&atid=CPAEXCEL_SILVER&url=http://www.efficientlearning.com/cpa/products/silver-cpa-review-course/
+redirect 301 /out/cpaexcel-student http://www.linkconnector.com/ta.php?lc=084825038045004557&atid=CPAEXCEL_STUDENT&url=http://www.efficientlearning.com/cpa/products/platinum-cpa-review-course/
+redirect 301 /out/cpaexcel-supplements http://www.linkconnector.com/ta.php?lc=084825038045004557&atid=CPAEXCEL_SUPP&url=http://www.efficientlearning.com/cpa/products/cpa-supplements/
+redirect 301 /out/cpaexcel-trial http://www.linkconnector.com/ta.php?lc=084825038045004557&atid=CPAEXCEL_TRIAL&url=http://www.efficientlearning.com/cpa/resources/free-trial/
+
+redirect 301 /out/exammatrix http://www.cpaexamguide.cpastudyhacks.com/surgent-ea
+
+redirect 301 /out/Lambers http://www.linkconnector.com/ta.php?lc=084825000010004240&atid=LAMBERS&url=http://www.lambers.com/cpa.html
+
+redirect 301 /out/Roger-audio http://www.linkconnector.com/ta.php?lc=084825037537004539&atid=ROGER_FLASH&url=https://www.rogercpareview.com/cpa-courses/audio
+redirect 301 /out/Roger-CPA http://www.linkconnector.com/ta.php?lc=084825037537004539&atid=ROGER_CPA&url=http://www.rogercpareview.com/online-cpa-review/
+redirect 301 /out/Roger-Cram http://www.linkconnector.com/ta.php?lc=084825037537004539&atid=ROGER_FRESH&url=https://www.rogercpareview.com/cpa-courses/cram
+redirect 301 /out/Roger-Elite http://www.linkconnector.com/ta.php?lc=084825037537004539&atid=ROGER_Elite&url=https://www.rogercpareview.com/cpa-courses/elite
+redirect 301 /out/Roger-Flash-App http://www.linkconnector.com/ta.php?lc=084825037537004539&atid=ROGER_FRESH&url=https://www.rogercpareview.com/cpa-courses/cpa-exam-digital-flashcards
+redirect 301 /out/Roger-flashcards http://www.linkconnector.com/ta.php?lc=084825037537004539&atid=ROGER_FLASH&url=https://www.rogercpareview.com/cpa-courses/flashcards
+redirect 301 /out/Roger-Fresh http://www.linkconnector.com/ta.php?lc=084825037537004539&atid=ROGER_FRESH&url=http://www.rogercpareview.com/enroll/fresh-start-discount/
+redirect 301 /out/Roger-MC-App http://www.linkconnector.com/ta.php?lc=084825037537004539&atid=ROGER_FRESH&url=https://www.rogercpareview.com/cpa-courses/exam-questions-app
+redirect 301 /out/Roger-Premier http://www.linkconnector.com/ta.php?lc=084825037537004539&atid=ROGER_PREMIER&url=https://www.rogercpareview.com/cpa-courses/premier
+redirect 301 /out/Roger-Trial http://www.linkconnector.com/ta.php?lc=084825037537004539&atid=ROGER_TRIAL&url=https://www.rogercpareview.com/cpa-courses/free-trial
+
+redirect 301 /out/surgent-flash http://www.linkconnector.com/ta.php?lc=084825067814005624&url=https://www.surgentcpareview.com/cpa-exam-flashcard-app
+redirect 301 /out/surgent-trial http://www.linkconnector.com/ta.php?lc=084825067814005624&url=https://www.surgentcpareview.com/pricing/free-trial
+redirect 301 /out/surgent http://www.linkconnector.com/ta.php?lc=084825067814005624&url=https://www.surgentcpareview.com/pricing
+redirect 301 /out/surgent-payment http://www.linkconnector.com/ta.php?lc=084825067814005624&url=https://www.surgentcpareview.com/pricing/payment-plan
+redirect 301 /out/surgent-discount http://www.linkconnector.com/ta.php?lc=084825067814005624&url=https://www.surgentcpareview.com/pricing/discount-coupon-codes
+redirect 301 /out/surgent-giveaway http://www.linkconnector.com/ta.php?lc=084825067814005624&url=http://www.cpenow.com/cpareview/sweepstakes-contests&atid=SURGENT-GIVEAWAY
+
+redirect 301 /out/Wiley http://www.linkconnector.com/ta.php?lc=084825038045004557&atid=WILEY&url=http://www.efficientlearning.com/cpa/products/online-test-bank/
+
+redirect 301 /out/Yaeger-app http://www.linkconnector.com/ta.php?lc=084825000012004216&atid=YAEGER7&url=http://www.yaegercpareview.com/cpa-review-course-builder.cfm
+redirect 301 /out/Yaeger-assessment http://www.linkconnector.com/ta.php?lc=084825000012004216&atid=YAEGER6&url=http://www.yaegercpareview.com/free-cpa-review-assessment/index.cfm
+redirect 301 /out/Yaeger-audio http://www.linkconnector.com/ta.php?lc=084825000012004216&atid=YAEGER5&url=https://www.yaegercpareview.com/cpa-review-audio-lectures.cfm
+redirect 301 /out/Yaeger-Cram http://www.linkconnector.com/ta.php?lc=084825000012004216&atid=YAEGER4&url=https://www.yaegercpareview.com/cpa-review-cram-courses.cfm
+redirect 301 /out/Yaeger-test-bank http://www.linkconnector.com/ta.php?lc=084825000012004216&atid=YAEGER3&url=https://www.yaegercpareview.com/cpa-review-testbank.cfm
+redirect 301 /out/Yaeger-trial http://www.linkconnector.com/ta.php?lc=084825000012004216&atid=YAEGER1&url=http://www.yaegercpareview.com/free-cpa-review-assessment/index.cfm
+redirect 301 /out/Yaeger http://www.linkconnector.com/ta.php?lc=084825000012004216&atid=YAEGERbot&url=http://www.yaegercpareview.com/adaptapass-products.cfm
+
+
+
+#PODCAST EPISODES
+redirect 301 /session001 https://www.cpaexamguide.com/learn/introduction-podcast/
+redirect 301 /session002 https://www.cpaexamguide.com/learn/fired/
+redirect 301 /session003 https://www.cpaexamguide.com/learn/cpa-productivity/
+redirect 301 /session004 https://www.cpaexamguide.com/learn/surviving-cpa/
+redirect 301 /session005 https://www.cpaexamguide.com/learn/cut-your-cpa-exam-study-time/
+redirect 301 /session006 https://www.cpaexamguide.com/learn/cpa-discipline/
+redirect 301 /session007 https://www.cpaexamguide.com/learn/tax-cpa/
+redirect 301 /session008 https://www.cpaexamguide.com/learn/roger-philipp-cpa/
+redirect 301 /session009 https://www.cpaexamguide.com/learn/lucas-week1/
+redirect 301 /session010 https://www.cpaexamguide.com/learn/lucas-week5/
+redirect 301 /session011 https://www.cpaexamguide.com/learn/cpa-parents/
+
+#FORCE REDIRECTS
+redirect 301 /about_thecpaguide https://www.cpaexamguide.com/about-me
+redirect 301 /CPE/Gleim_CPE https://www.cpaexamguide.com/learn/gleim-cpe/
+
+Redirect 301	/CPA-Blog/	https://www.cpaexamguide.com/learn/blog/
+Redirect 301    /top10 https://www.cpaexamguide.com/best-cpa-review-courses
+
+Redirect 301	/Accounting-Exams/Gleim-EA	https://www.cpaexamguide.com/learn/gleim-enrolled-agent/
+Redirect 301	/CPA-Blog/CPA-Discounts	https://www.cpaexamguide.com/best-cpa-review-discounts
+Redirect 301	/top-cpa-review-courses https://www.cpaexamguide.com/best-cpa-review-courses
+Redirect 301	/Best-CPA-Review-Course-Ranking	https://www.cpaexamguide.com/top-cpa-review-courses
+Redirect 301	/CPA-Blog/pass-the-cpa-exam-cheap	https://www.cpaexamguide.com/learn/blog/
+Redirect 301	/CPA-Blog/best-public-accounting-gifs	https://www.cpaexamguide.com/learn/blog/
+Redirect 301	/cpa-requirements/states	https://www.cpaexamguide.com/state-cpa-requirements
+Redirect 301	/cpa-requirements/states-no-150	https://www.cpaexamguide.com/state-cpa-requirements
+Redirect 301	/cpa-requirements/states-no-age	https://www.cpaexamguide.com/state-cpa-requirements
+Redirect 301	/cpa-requirements/states-no-citizen	https://www.cpaexamguide.com/state-cpa-requirements
+Redirect 301	/cpa-requirements/states-no-residency	https://www.cpaexamguide.com/state-cpa-requirements
+Redirect 301	/review-courses/wiley	https://www.cpaexamguide.com/review-courses/wiley-cpaexcel#wiley
+Redirect 301    /CPA-Coaching-Guide https://www.cpaexamguide.com/resources
+Redirect 301    /itunes https://podcasts.apple.com/us/podcast/cpa-exam-guide-podcast-learn-how-to-dominate-the-cpa-exam/id898894028
+Redirect 301    /stitcher http://www.stitcher.com/s?fid=54261&refid=stpr
+Redirect 301    /tunein http://tunein.com/radio/The-CPA-Guide-p627166/
+Redirect 301    /Gleim https://www.cpaexamguide.com/review-courses/gleim
+Redirect 301    /Fast-Forward https://www.cpaexamguide.com/review-courses/fast-forward-academy
+Redirect 301    /exammatrix https://www.cpaexamguide.com/review-courses/surgent
+Redirect 301    /CPAexcel https://www.cpaexamguide.com/review-courses/wiley-cpaexcel
+Redirect 301    /Roger https://www.cpaexamguide.com/review-courses/roger
+Redirect 301    /Gleim https://www.cpaexamguide.com/review-courses/gleim
+Redirect 301    /Fast-Forward https://www.cpaexamguide.com/review-courses/fast-forward-academy
+Redirect 301    /CPAexcel https://www.cpaexamguide.com/review-courses/wiley-cpaexcel
+Redirect 301    /Roger https://www.cpaexamguide.com/review-courses/roger
+Redirect 301    /black https://www.cpaexamguide.com/best-cpa-review-courses
+Redirect 301	/cpa-requirements/Alabama	https://www.cpaexamguide.com/cpa-exam-requirements/Alabama-cpa-requirements
+Redirect 301	/cpa-requirements/Alaska	https://www.cpaexamguide.com/cpa-exam-requirements/Alaska-cpa-requirements
+Redirect 301	/cpa-requirements/Arizona	https://www.cpaexamguide.com/cpa-exam-requirements/Arizona-cpa-requirements
+Redirect 301	/cpa-requirements/Arkansas	https://www.cpaexamguide.com/cpa-exam-requirements/Arkansas-cpa-requirements
+Redirect 301	/cpa-requirements/California	https://www.cpaexamguide.com/cpa-exam-requirements/California-cpa-requirements
+Redirect 301	/cpa-requirements/Colorado	https://www.cpaexamguide.com/cpa-exam-requirements/Colorado-cpa-requirements
+Redirect 301	/cpa-requirements/Connecticut	https://www.cpaexamguide.com/cpa-exam-requirements/Connecticut-cpa-requirements
+Redirect 301	/cpa-requirements/Delware	https://www.cpaexamguide.com/cpa-exam-requirements/Delaware-cpa-requirements
+Redirect 301	/cpa-requirements/Florida	https://www.cpaexamguide.com/cpa-exam-requirements/Florida-cpa-requirements
+Redirect 301	/cpa-requirements/Georgia	https://www.cpaexamguide.com/cpa-exam-requirements/Georgia-cpa-requirements
+Redirect 301	/cpa-requirements/Guam	https://www.cpaexamguide.com/cpa-exam-requirements/Guam-cpa-requirements
+Redirect 301	/cpa-requirements/Hawaii	https://www.cpaexamguide.com/cpa-exam-requirements/Hawaii-cpa-requirements
+Redirect 301	/cpa-requirements/Idaho	https://www.cpaexamguide.com/cpa-exam-requirements/Idaho-cpa-requirements
+Redirect 301	/cpa-requirements/Illinois	https://www.cpaexamguide.com/cpa-exam-requirements/Illinois-cpa-requirements
+Redirect 301	/cpa-requirements/Indiana	https://www.cpaexamguide.com/cpa-exam-requirements/Indiana-cpa-requirements
+Redirect 301	/cpa-requirements/Iowa	https://www.cpaexamguide.com/cpa-exam-requirements/Iowa-cpa-requirements
+Redirect 301	/cpa-requirements/Kansas	https://www.cpaexamguide.com/cpa-exam-requirements/Kansas-cpa-requirements
+Redirect 301	/cpa-requirements/Kentucky	https://www.cpaexamguide.com/cpa-exam-requirements/Kentucky-cpa-requirements
+Redirect 301	/cpa-requirements/Louisiana	https://www.cpaexamguide.com/cpa-exam-requirements/Louisiana-cpa-requirements
+Redirect 301	/cpa-requirements/Maine	https://www.cpaexamguide.com/cpa-exam-requirements/Maine-cpa-requirements
+Redirect 301	/cpa-requirements/Maryland	https://www.cpaexamguide.com/cpa-exam-requirements/Maryland-cpa-requirements
+Redirect 301	/cpa-requirements/Massachusetts	https://www.cpaexamguide.com/cpa-exam-requirements/Massachusetts-cpa-requirements
+Redirect 301	/cpa-requirements/Michigan	https://www.cpaexamguide.com/cpa-exam-requirements/Michigan-cpa-requirements
+Redirect 301	/cpa-requirements/Minnesota	https://www.cpaexamguide.com/cpa-exam-requirements/Minnesota-cpa-requirements
+Redirect 301	/cpa-requirements/Mississippi	https://www.cpaexamguide.com/cpa-exam-requirements/Mississippi-cpa-requirements
+Redirect 301	/cpa-requirements/Missouri	https://www.cpaexamguide.com/cpa-exam-requirements/Missouri-cpa-requirements
+Redirect 301	/cpa-requirements/Montana	https://www.cpaexamguide.com/cpa-exam-requirements/Montana-cpa-requirements
+Redirect 301	/cpa-requirements/Nebraska	https://www.cpaexamguide.com/cpa-exam-requirements/Nebraska-cpa-requirements
+Redirect 301	/cpa-requirements/Nevada	https://www.cpaexamguide.com/cpa-exam-requirements/Nevada-cpa-requirements
+Redirect 301	/cpa-requirements/New-Hampshire	https://www.cpaexamguide.com/cpa-exam-requirements/New-Hampshire-cpa-requirements
+Redirect 301	/cpa-requirements/New-Jersey	https://www.cpaexamguide.com/cpa-exam-requirements/New-Jersey-cpa-requirements
+Redirect 301	/cpa-requirements/New-Mexico	https://www.cpaexamguide.com/cpa-exam-requirements/New-Mexico-cpa-requirements
+Redirect 301	/cpa-requirements/New-York	https://www.cpaexamguide.com/cpa-exam-requirements/New-York-cpa-requirements
+Redirect 301	/cpa-requirements/North-Carolina	https://www.cpaexamguide.com/cpa-exam-requirements/North-Carolina-cpa-requirements
+Redirect 301	/cpa-requirements/North-Dakota	https://www.cpaexamguide.com/cpa-exam-requirements/North-Dakota-cpa-requirements
+Redirect 301	/cpa-requirements/Ohio	https://www.cpaexamguide.com/cpa-exam-requirements/Ohio-cpa-requirements
+Redirect 301	/cpa-requirements/Oklahoma	https://www.cpaexamguide.com/cpa-exam-requirements/Oklahoma-cpa-requirements
+Redirect 301	/cpa-requirements/Oregon	https://www.cpaexamguide.com/cpa-exam-requirements/Oregon-cpa-requirements
+Redirect 301	/cpa-requirements/Pennsylvania	https://www.cpaexamguide.com/cpa-exam-requirements/Pennsylvania-cpa-requirements
+Redirect 301	/cpa-requirements/Puerto-Rico	https://www.cpaexamguide.com/cpa-exam-requirements/Puerto-Rico-cpa-requirements
+Redirect 301	/cpa-requirements/Rhode-Island	https://www.cpaexamguide.com/cpa-exam-requirements/Rhode-Island-cpa-requirements
+Redirect 301	/cpa-requirements/South-Carolina	https://www.cpaexamguide.com/cpa-exam-requirements/South-Carolina-cpa-requirements
+Redirect 301	/cpa-requirements/South-Dakota	https://www.cpaexamguide.com/cpa-exam-requirements/South-Dakota-cpa-requirements
+Redirect 301	/cpa-requirements/Tennessee	https://www.cpaexamguide.com/cpa-exam-requirements/Tennessee-cpa-requirements
+Redirect 301	/cpa-requirements/Texas	https://www.cpaexamguide.com/cpa-exam-requirements/Texas-cpa-requirements
+Redirect 301	/cpa-requirements/Utah	https://www.cpaexamguide.com/cpa-exam-requirements/Utah-cpa-requirements
+Redirect 301	/state-cpa-requirements https://www.cpaexamguide.com/cpa-exam-application-process
+redirect 301    /side-by-side-comparison   https://www.cpaexamguide.com/best-cpa-review-courses
+
+redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_becker https://www.cpaexamguide.com/review-courses/becker 
+redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_cpaexcel https://www.cpaexamguide.com/review-courses/wiley-cpaexcel 
+redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_fastforward https://www.cpaexamguide.com/review-courses/fast-forward-academy 
+redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_gleim https://www.cpaexamguide.com/review-courses/gleim 
+redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_lambers https://www.cpaexamguide.com/review-courses/lambers
+redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_mds https://www.cpaexamguide.com/review-courses/steve-martin-mds
+redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_rogers https://www.cpaexamguide.com/review-courses/roger
+redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_yaeger https://www.cpaexamguide.com/review-courses/yaeger
+
+Redirect 301	/cpaguidetv	https://www.cpaexamguide.com/21-cpa-exam-study-tips-and-strategies
+Redirect 301	/failed	https://www.cpaexamguide.com/retake-failed-cpa-exam-section
+Redirect 301	/cpa-exam-101 https://www.cpaexamguide.com/21-cpa-exam-study-tips-and-strategies
+Redirect 301	/study-tips	https://www.cpaexamguide.com/21-cpa-exam-study-tips-and-strategies
+
+Redirect 301    /review-courses/best-cpa-review-discounts https://www.cpaexamguide.com/best-cpa-review-discounts
+Redirect 301    /Oregon-cpa-requirements https://www.cpaexamguide.com/cpa-exam-requirements/Oregon-cpa-requirements
+Redirect 301    /review-courses/review-courses/roger https://www.cpaexamguide.com/review-courses/roger

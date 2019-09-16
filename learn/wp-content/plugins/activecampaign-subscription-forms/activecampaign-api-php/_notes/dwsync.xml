@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Account.class.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899098972976284" remote="130883628000000000" Dst="2" />
+<file name="Auth.class.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899098973776849" remote="130883628000000000" Dst="2" />
+<file name="ActiveCampaign.class.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899098973996961" remote="130883628000000000" Dst="2" />
+<file name="Automation.class.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899098975367863" remote="130883628000000000" Dst="2" />
+<file name="Campaign.class.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899098976158385" remote="130883628000000000" Dst="2" />
+<file name="Connector.class.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899098976288471" remote="130883628000000000" Dst="2" />
+<file name="Contact.class.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899098977819482" remote="130883628000000000" Dst="2" />
+<file name="Deal.class.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899098978459905" remote="130883628000000000" Dst="2" />
+<file name="Design.class.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899098978559971" remote="130883628000000000" Dst="2" />
+<file name="Form.class.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899098980151052" remote="130883628000000000" Dst="2" />
+<file name="Group.class.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899098980801451" remote="130883628000000000" Dst="2" />
+<file name="List.class.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899098980851487" remote="130883628000000000" Dst="2" />
+<file name="Message.class.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899098982482561" remote="130883628000000000" Dst="2" />
+<file name="Settings.class.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899098983213055" remote="130883628000000000" Dst="2" />
+<file name="Subscriber.class.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899098983223050" remote="130883628000000000" Dst="2" />
+<file name="Tracking.class.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899098984854139" remote="130883628000000000" Dst="2" />
+<file name="Webhook.class.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899098985494562" remote="130883628000000000" Dst="2" />
+<file name="User.class.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899098985554590" remote="130883628000000000" Dst="2" />
+<file name="ActiveCampaign.class.php" server="ftp.cpaexamguide.com/public_html/" local="130899098973996961" remote="130900237200000000" Dst="2" />
+<file name="Auth.class.php" server="ftp.cpaexamguide.com/public_html/" local="130899098973776849" remote="130900237200000000" Dst="2" />
+<file name="Account.class.php" server="ftp.cpaexamguide.com/public_html/" local="130899098972976284" remote="130900237200000000" Dst="2" />
+<file name="Connector.class.php" server="ftp.cpaexamguide.com/public_html/" local="130899098976288471" remote="130900237200000000" Dst="2" />
+<file name="Automation.class.php" server="ftp.cpaexamguide.com/public_html/" local="130899098975367863" remote="130900237200000000" Dst="2" />
+<file name="Campaign.class.php" server="ftp.cpaexamguide.com/public_html/" local="130899098976158385" remote="130900237200000000" Dst="2" />
+<file name="Contact.class.php" server="ftp.cpaexamguide.com/public_html/" local="130899098977819482" remote="130900237200000000" Dst="2" />
+<file name="Deal.class.php" server="ftp.cpaexamguide.com/public_html/" local="130899098978459905" remote="130900237200000000" Dst="2" />
+<file name="Design.class.php" server="ftp.cpaexamguide.com/public_html/" local="130899098978559971" remote="130900237200000000" Dst="2" />
+<file name="Form.class.php" server="ftp.cpaexamguide.com/public_html/" local="130899098980151052" remote="130900237200000000" Dst="2" />
+<file name="Group.class.php" server="ftp.cpaexamguide.com/public_html/" local="130899098980801451" remote="130900237200000000" Dst="2" />
+<file name="List.class.php" server="ftp.cpaexamguide.com/public_html/" local="130899098980851487" remote="130900237200000000" Dst="2" />
+<file name="Message.class.php" server="ftp.cpaexamguide.com/public_html/" local="130899098982482561" remote="130900237200000000" Dst="2" />
+<file name="Settings.class.php" server="ftp.cpaexamguide.com/public_html/" local="130899098983213055" remote="130900237200000000" Dst="2" />
+<file name="Subscriber.class.php" server="ftp.cpaexamguide.com/public_html/" local="130899098983223050" remote="130900237200000000" Dst="2" />
+<file name="Tracking.class.php" server="ftp.cpaexamguide.com/public_html/" local="130899098984854139" remote="130900237200000000" Dst="2" />
+<file name="User.class.php" server="ftp.cpaexamguide.com/public_html/" local="130899098985554590" remote="130900237200000000" Dst="2" />
+<file name="Webhook.class.php" server="ftp.cpaexamguide.com/public_html/" local="130899098985494562" remote="130900237200000000" Dst="2" />
+</dwsync>

@@ -1,0 +1,17 @@
+#Force PHP5.2 On Server
+<IfModule mod_suphp.c>
+	suPHP_ConfigPath /home1/cpaexamg/public_html/www.cpaexamguide.com/php.ini
+	<Files php.ini>
+		order allow,deny
+		deny from all
+	</Files>
+</IfModule>
+
+# Use PHP5 as default
+AddHandler application/x-httpd-php52 .php
+AddHandler application/x-httpd-php52 .htm .html
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([a-zA-Z0-9\-]+)/?(cl|nc)?/?([a-zA-Z0-9\-\_\.\=\?\%\@\+\:\{\}\ ]+)?/?([a-zA-Z0-9\-\_\.\=\?\%\@\+\:\{\}\ ]+)?/?([a-zA-Z0-9\-\_\.\=\?\%\@\+\:\{\}\ ]+)?/?([a-zA-Z0-9\-\_\.\=\?\%\@\+\:\{\}\ ]+)?/?([a-zA-Z0-9\-\_\.\=\?\%\@\+\:\{\}\ ]+)?/?([0-9]{1,2}\.[0-9]{2,3})?/?$ index.php?l=$1&cloak=$2&s1=$3&s2=$4&s3=$5&s4=$6&s5=$7&c=$8&q=%{QUERY_STRING}

@@ -1,0 +1,297 @@
+h1{
+	color:#3fa9f5;
+}
+#tabscont{
+	border-radius: 5px;
+    background-color: #222222;
+	overflow: hidden;
+}
+.mobileMenu{
+    display: none;
+    float: right;
+    height: 16px;
+    width: 17px;
+    border: 1px solid #868686;
+    border-radius: 2px;
+    padding: 3px 2px;
+    margin: 5px;
+    cursor: pointer;
+}
+.mobileMenu span {
+	display: block;
+    border-top: 1px solid #dedede;
+    margin: 2px 0;
+    border-bottom: 1px solid #828282;
+}
+ul#tabs {
+	list-style: none;
+    padding: 0;
+    margin: 0;
+    /* display: block; */
+    overflow: hidden;
+}
+ul#tabs li {
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	background-color: #222222;
+	color: #FFFFFF;
+	/* border-right: 1px solid #4e4e4e; */
+	cursor:pointer;
+	height: 30px;
+    line-height: 30px;
+	color:#9d9d9d;
+}
+
+ul#tabs li:hover, ul#tabs li.active {
+	background-color: #080808;
+	color:#ffffff;
+}
+
+#bodycontent .tab{
+	display:none;
+	min-height:100%;
+	overflow:hidden;
+	/* border: 1px solid #dedede; */
+}
+
+#bodycontent .tab.active{
+	display:block!important;
+}
+
+.section {
+	float: left;
+    padding: 0 10px 10px 10px;
+    width: calc(50% - 5px);
+    margin-left: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    min-height: 151px;
+    border: 1px solid #ececec;
+    background-color: #eff4f7;
+    border-radius: 5px;
+}
+
+.section.wide{
+	width: 99%;
+}
+
+.section:nth-child(1){
+	margin-left: 0;
+}
+.section .heading{
+	font-weight:bold;
+	padding-top: 15px;
+}
+.field label:not(.forcheckbox) {
+	background-color: #eeeeee;
+	border-right:1px solid #dddddd;
+}
+.field label {
+    display: inline-block;
+    padding:10px 20px;
+	border-radius: 5px 0 0 5px;
+	box-sizing: border-box;
+}
+.field {
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.field2 {
+	padding: 10px;
+}
+.field2 select, .field2 input {
+    padding: 5px 10px;
+	margin-top: 5px;
+}
+
+.row{
+	display:block;
+	overflow:hidden;
+}
+
+.row.short .section{
+	min-height : 100px!important;
+}
+
+.field select{
+	border:none;
+}
+.field input{
+    padding: 5px;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+}
+.wpplugin{display:none;}
+button.addnew{
+	background-color: #5cb85c;
+	border: 0;
+	padding: 5px 10px;
+	margin: 0px 15px;
+	color: #ffffff;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+button.addnew:hover{
+	background-color: #57ab57;
+}
+
+button.additem{
+	background-color: #5f9fde;
+	border: 0;
+	padding: 5px 10px;
+	margin-left: 5px;
+	margin-top: 5px;
+	color: #ffffff;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+button.additem:hover{
+	background-color: #477aad;
+}
+
+.siteLists{
+    background-color: #5dad0d;
+    border-radius: 5px;
+    padding: 5px 25px 5px 10px;
+    font-size: 13px;
+    margin-left: 5px;
+    position: relative;
+    margin-top: 5px;
+    display: inline-block;
+    color: #ffffff;
+}
+
+.siteLists span{
+    position: absolute;
+    right: 5px;
+    background-color: white;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    line-height: 13px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #5dad0d;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd){
+	background-color:#f5f5f5;
+}
+
+tbody tr:hover{
+	background-color:#ececec;
+}
+
+thead tr{
+	background-color: #696969;
+	color: #ffffff;
+	text-align:left;
+}
+
+th, td{
+	padding : 8px;
+}
+
+.deltr{
+    background-color: red;
+    width: 15px;
+    display: block;
+    height: 15px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 11px;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.tab.products input{
+	margin-top:3px;
+}
+
+.loadinggif {
+    background: transparent url(tiny-loader.gif) no-repeat center;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+.loadinggif.updatingSite {
+	display:none;
+	height: 46px;
+}
+
+.dontuseActiveCampaign{
+	display:none!important;
+}
+.useActiveCampaign{
+	display:block;
+}
+.assignedCustomFields{
+	margin-top:5px;
+}
+#siteOrders-list_length.dataTables_length{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.WLM#productslist th:nth-child(4), .WLM#productslist td:nth-child(4){
+	display:none;
+}
+
+span.reloadCF {
+    background-color: #08c508;
+    display: inline-block;
+    font-size: 8px;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+span.reloadCF.loadinggif {
+	text-indent: -1000px;
+	background-color:#eff4f7;
+}
+
+@media only screen and (max-width : 600px) {
+	.section {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width : 590px) {
+	#tabs{
+		display:none;
+	}
+
+	#tabscont .mobileMenu{
+		display:block;
+	}
+	
+	#tabscont:hover #tabs {
+		display:block;
+		margin-top: 30px;
+	}
+	#tabscont:hover .mobileMenu {
+		display:none;
+	}
+	ul#tabs li {
+		display: block;
+		float:none;
+	}
+}

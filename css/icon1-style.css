@@ -1,0 +1,231 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	
+}
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.cd-container {
+	/* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+	width: 90%;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding-left: 0px;
+}
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+html, body {
+  height: 100%;
+}
+
+@media only screen and (min-width: 1170px) {
+  body.new-color-1::before {
+    background-color: #008ffe;
+  }
+
+  body.new-color-2::before {
+    background-color: #008ffe;
+  }
+
+  body.new-color-3::before {
+    background-color: #008ffe;
+  }
+}
+body::before, body::after {
+  /* the 2 underneath colored sections */
+  content: '';
+  position: fixed;
+  /* trick to remove some annoying flickering on webkit browsers */
+  width: 89.8%;
+  max-width: 1170px;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 50%;
+  z-index: -1;
+}
+
+body::before {
+  top: 0;
+  background-color: #008ffe;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+body::after {
+  top: 50%;
+  background-color: rgba(134,134,134,0.47);
+}
+
+header {
+}
+
+header h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 1170px;
+  text-align: center;
+  color: #699ec0;
+  font-size: 26px;
+  font-size: 1.625rem;
+}
+
+.cd-service {
+	position: relative;
+	z-index: 2;
+	min-height: 50px;
+	margin-left: 56px;
+	background-color: #FFFFFF;
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 4em;
+	margin-right: -3px;
+}
+.cd-service::before, .cd-service::after {
+  content: '';
+  position: absolute;
+  width: 56px;
+  right: 100%;
+  z-index: 2;
+}
+.cd-service::before {
+  top: 0;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+.cd-service::after {
+  top: 50px;
+  bottom: 0;
+  background-image: url("../images/img/cd-pattern-small.svg");
+  background-repeat: repeat-y;
+}
+.cd-service.cd-service-divider::after {
+  top: 0;
+}
+.cd-service.cd-service-divider:last-child {
+  display: none;
+}
+.cd-service.cd-service-1::before {
+  background-image: url("../images/img/cd-icon-1-small.svg");
+}
+.cd-service.cd-service-2::before {
+  background-image: url("../images/img/cd-icon-2-small.svg");
+}
+.cd-service.cd-service-3::before {
+  background-image: url("../images/img/cd-icon-3-small.svg");
+}
+.cd-service.cd-service-4::before {
+  background-image: url("../images/img/cd-icon-4-small.svg");
+}
+.cd-service h2 {
+	text-transform: uppercase;
+	color: rgba(128,128,128,0.80);
+	margin-bottom: 1em;
+	font-family: "Merriweather Sans", sans-serif;
+}
+.cd-service p {
+	color: rgba(38,38,38,0.50);
+}
+@media only screen and (min-width: 1170px) {
+  .cd-service {
+    min-height: 525px;
+    margin-left: 420px;
+    padding: 6em 2em;
+  }
+  .cd-service::before, .cd-service::after {
+    width: 420px;
+  }
+  .cd-service::before {
+    height: 325px;
+  }
+  .cd-service::after {
+    top: 325px;
+	margin: 0 auto auto 0;
+    background-image: url("../images/img/cd-pattern-large.svg");
+  }
+  .cd-service.cd-service-divider:first-child, .cd-service.cd-service-divider:last-child {
+    min-height: 50px;
+    padding: 0;
+  }
+  .cd-service.cd-service-divider:last-child {
+    display: block;
+  }
+  .cd-service.cd-service-1::before {
+    background-image: url("../images/img/cd-icon-1-large.svg");
+  }
+  .cd-service.cd-service-2::before {
+    background-image: url("../images/img/cd-icon-2-large.svg");
+  }
+  .cd-service.cd-service-3::before {
+    background-image: url("../images/img/cd-icon-3-large.svg");
+  }
+  .cd-service.cd-service-4::before {
+    background-image: url("../images/img/cd-icon-4-large.svg");
+  }
+  .cd-service h2, .cd-service p {
+	color: rgba(134,134,134,0.47);
+	-webkit-transition: color, 0.5s;
+	-moz-transition: color, 0.5s;
+	transition: color, 0.5s;
+  }
+  .cd-service h2 {
+  }
+  .cd-service p {
+  }
+  .cd-service.focus h2 {
+	color: #303030;
+  }
+  .cd-service.focus p {
+	color: #303030;
+  }
+}
+
+footer {
+  position: relative;
+  height: 50%;
+  background: #ffffff;
+  z-index: 2;
+}

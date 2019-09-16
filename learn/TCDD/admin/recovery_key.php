@@ -1,0 +1,1 @@
+<?php if(!defined("THANKSTHRIVE"))die(); define("RECOVERY_KEY",false); ?>

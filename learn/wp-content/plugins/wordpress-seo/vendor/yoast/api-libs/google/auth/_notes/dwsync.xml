@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Google_AssertionCredentials.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899099528012792" remote="130883620800000000" Dst="2" />
+<file name="Google_Auth.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899099528573162" remote="130883620800000000" Dst="2" />
+<file name="Google_AuthNone.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899099529303653" remote="130883620800000000" Dst="2" />
+<file name="Google_LoginTicket.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899099530924724" remote="130883620800000000" Dst="2" />
+<file name="Google_OAuth2.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899099531014777" remote="130883620800000000" Dst="2" />
+<file name="Google_P12Signer.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899099532325649" remote="130883620800000000" Dst="2" />
+<file name="Google_Signer.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899099533476400" remote="130883620800000000" Dst="2" />
+<file name="Google_PemVerifier.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899099533486409" remote="130883620800000000" Dst="2" />
+<file name="Google_Verifier.php" server="gator3276.hostgator.com/public_html/cpaexamguide.com/" local="130899099534577136" remote="130883620800000000" Dst="2" />
+<file name="Google_AssertionCredentials.php" server="ftp.cpaexamguide.com/public_html/" local="130899099528012792" remote="130900238400000000" Dst="2" />
+<file name="Google_Auth.php" server="ftp.cpaexamguide.com/public_html/" local="130899099528573162" remote="130900238400000000" Dst="2" />
+<file name="Google_AuthNone.php" server="ftp.cpaexamguide.com/public_html/" local="130899099529303653" remote="130900238400000000" Dst="2" />
+<file name="Google_LoginTicket.php" server="ftp.cpaexamguide.com/public_html/" local="130899099530924724" remote="130900238400000000" Dst="2" />
+<file name="Google_OAuth2.php" server="ftp.cpaexamguide.com/public_html/" local="130899099531014777" remote="130900238400000000" Dst="2" />
+<file name="Google_P12Signer.php" server="ftp.cpaexamguide.com/public_html/" local="130899099532325649" remote="130900238400000000" Dst="2" />
+<file name="Google_PemVerifier.php" server="ftp.cpaexamguide.com/public_html/" local="130899099533486409" remote="130900238400000000" Dst="2" />
+<file name="Google_Verifier.php" server="ftp.cpaexamguide.com/public_html/" local="130899099534577136" remote="130900238400000000" Dst="2" />
+<file name="Google_Signer.php" server="ftp.cpaexamguide.com/public_html/" local="130899099533476400" remote="130900238400000000" Dst="2" />
+</dwsync>

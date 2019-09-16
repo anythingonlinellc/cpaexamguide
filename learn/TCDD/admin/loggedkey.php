@@ -1,0 +1,1 @@
+<?php if(!defined("THANKSTHRIVE"))die(); define("LOGGED_KEY","710f5344ad43b4399f89febeb977672f"); ?>

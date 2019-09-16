@@ -1,0 +1,37 @@
+<?php $t =& peTheme(); ?>
+<?php $content =& $t->content; ?>
+<?php $meta =& $content->meta(); ?>
+<?php 
+
+if ( is_day() ) {
+        $date = get_the_date();
+} elseif ( is_month() ) {
+        $date = get_the_date('F Y');
+} elseif ( is_year() ) {
+        $date = get_the_date('Y');
+} else {
+        $date = __("Archives",'Pixelentity Theme/Plugin');
+}
+
+?>
+<?php $t->layout->pageTitle = $date; ?>
+<?php get_header(); ?>
+
+<div id="content-region">
+	<div class="container">
+		<div class="row">
+			<div id="main-content-region" class="main-content col-xs-12 col-md-9">
+				<div class="region">
+					<div id="blog-single-block" class="blog-single block">
+						<?php $t->content->loop(); ?>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 sidebar">
+				<?php get_sidebar(); ?>
+			</div>
+		</div>
+	</div>
+</div>
+
+<?php get_footer(); ?>

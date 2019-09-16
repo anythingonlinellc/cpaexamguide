@@ -1,0 +1,430 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Easy Custom Auto Excerpt"
+msgstr ""
+
+#. Short description.
+msgid "Auto Excerpt for your post on home, search and archive. Customize Read More button and thumbnail image. Easy to configure and have a lot of options."
+msgstr ""
+
+#. Screenshot description.
+msgid "Easy Custom Auto Excerpt on action."
+msgstr ""
+
+#. Screenshot description.
+msgid "General Options."
+msgstr ""
+
+#. Screenshot description.
+msgid "Advanced Excerpt Location Options."
+msgstr ""
+
+#. Screenshot description.
+msgid "Read More Button Options."
+msgstr ""
+
+#. Found in description list item.
+msgid "Excerpt your post based on character length."
+msgstr ""
+
+#. Found in description list item.
+msgid "Choose to excerpt your on your home, search, archive, or on your custom archive page."
+msgstr ""
+
+#. Found in description list item.
+msgid "Align text (Justify,Right,Left, Center) your text based on your preference."
+msgstr ""
+
+#. Found in description list item.
+msgid "Custom Read More text and Button."
+msgstr ""
+
+#. Found in description list item.
+msgid "Preserve Image on Excerpt."
+msgstr ""
+
+#. Found in description list item.
+msgid "Preserve real excerpt you wrote."
+msgstr ""
+
+#. Found in description list item.
+msgid "Partial Indonesia and Spanish translation."
+msgstr ""
+
+#. Found in description list item.
+msgid "Excerpt method by 1st paragraph, 2nd paragraph, and 3rd paragraph"
+msgstr ""
+
+#. Found in description list item.
+msgid "Adjust Image Excerpt Position (left, right, center, float left and float right)"
+msgstr ""
+
+#. Found in description list item.
+msgid "Adjust Image width and margin"
+msgstr ""
+
+#. Found in description list item.
+msgid "Disable excerpt on specific post"
+msgstr ""
+
+#. Found in description list item.
+msgid "10 Read More font type and custom font size"
+msgstr ""
+
+#. Found in description list item.
+msgid "40 + Read More button themes."
+msgstr ""
+
+#. Found in description list item.
+msgid "username: coba"
+msgstr ""
+
+#. Found in description list item.
+msgid "password: 123456"
+msgstr ""
+
+#. Found in description list item.
+msgid "Install the plugin."
+msgstr ""
+
+#. Found in description list item.
+msgid "In the Admin Panel, Go to Setting -&gt; Excerpt."
+msgstr ""
+
+#. Found in description list item.
+msgid "Fill the setting according your need"
+msgstr ""
+
+#. Found in description list item.
+msgid "To remove readmore link fill the readmore options with \"-\" (without quote)"
+msgstr ""
+
+#. Found in description list item.
+msgid "If the post have read more, than the read more will be used."
+msgstr ""
+
+#. Found in description list item.
+msgid "If the post doesn't have read more , than post excerpt will be used."
+msgstr ""
+
+#. Found in description list item.
+msgid "If the post doesn't have read more and excerpt than it will automagically generate excerpt."
+msgstr ""
+
+#. Found in description list item.
+msgid "Bahasa Indonesian : Todi ~ @todiadiyatmo"
+msgstr ""
+
+#. Found in description list item.
+msgid "Serbian : Ogi Djuraskovic ~ firstsiteguide.com"
+msgstr ""
+
+#. Found in description list item.
+msgid "German"
+msgstr ""
+
+#. Found in description list item.
+msgid "French"
+msgstr ""
+
+#. Found in description list item.
+msgid "Spanish"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Easy Custom Auto Excerpt is wordpress plugin to cut/excerpt your post displayed on the home , search or archive pages. This plugin also enable you to customize the readmore button text and thumbnail image. Just active the plugin, configure some options and you're good to go :)"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "The free version is come with everything you need to auto excerpt your content."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<a href=\"http://coba.tonjoostudio.com/\" title=\"Live demos of Easy Custom Auto Excerpt\">Demo</a> | <a href=\"http://wpexcerptplugin.com/\" title=\"Get the premium version\">Premium version</a> | <a href=\"https://tonjoostudio.com/addons/easy-custom-auto-excerpt-premium/?utm_source=wp_org&amp;utm_medium=link&amp;utm_campaign=ecae#manual\" title=\"Easy Custom Auto Excerpt Documentation\">Documentation</a> | <a href=\"https://www.youtube.com/watch?v=ZZaXfrB4-68\" title=\"ECAE Video tutorials\">Video tutorials</a> | <a href=\"https://forum.tonjoostudio.com/thread-category/easy-custom-auto-excerpt/\" title=\"ECAE Support forum\">Support forum</a>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Screencast</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "https://www.youtube.com/watch?v=ZZaXfrB4-68"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Features :</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "And if you like our plugin and want to do more customization we offer the premium version with some added feature :"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Get the premium version on <a href=\"http://wpexcerptplugin.com/\" title=\"Easy Custom Auto Excerpt Premium\" rel=\"friend\">Easy Custom Auto Excerpt Premium</a>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "*if you have any questions,comment,customization request or suggestion please contact us via our <a href=\"https://forum.tonjoostudio.com/thread-category/easy-custom-auto-excerpt/\" title=\"Tonjoo Forum\" rel=\"friend\">Tonjoo Forum</a>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Find more detail on our official plugin page : <a href=\"http://wpexcerptplugin.com/\" title=\"visit plugin site\" rel=\"friend\">Easy Custom Auto Excerpt</a>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Or you can find our best plugins at <a href=\"https://tonjoostudio.com/\" title=\"Tonjoo Studio\" rel=\"friend\">Tonjoo Studio</a>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "We can also modify your WordPress plugins according to your needs. Visit us : <a href=\"https://tonjoo.com/\" title=\"Tonjoo WordPress Developer\" rel=\"friend\">Tonjoo WordPress Developer</a>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Usage Instruction</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Please have a time to understand how this plugin is generating excerpt :"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Translation :"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Grap the plugin from from wordpress plugin directory or Upload the easy-custom-auto-excerpt folder to the /wp-content/plugins/ directory"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Activate the plugin"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixing google font http/https protocol"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix known bugs"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Hide ads when premium key is registered"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixing issue with WPML "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixing compatibility to image caption"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix plugin updater"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add an ability to make the button inline with the content"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add an ability to make the button font same as content font"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add plugin updater"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add disable excerpt on RSS Feed option"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add button shortcode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add German translation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add French translation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add Spanish translation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add Serbian translation (thanks to Ogi Djuraskovic)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add new advanced excerpt location options"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add new excerpt size options in each location"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved translation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix word preserved for word excerpt method"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tested up to WordPress 4.0"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add option to do excerpt in the pages"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Redesign free button style"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add option to always show \"read more\" link"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Change behaviour for premium promo notification"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add option to strip empty HTML tags"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add option to change special method (change between yes and no to if there is a fatal error)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Change behaviour for position method left and right (premium edition)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add image position method: left, right, center, float left, float right (premium edition)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add image width and image margin options"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Decrease file size"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add new excerpt method: show 1st, 1st - 2nd and 1st - 3rd paragraph (premium edition)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add option to change font size (premium edition)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated display image options"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add option to disable excerpt in every single post (premium edition)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated admin UI, more easy and intuitive"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add select font option (premium edition)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add select button theme option (premium edition)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add custom css option"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add front page excerpt option"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improve excerpt algorithm"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add readmore option"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add spanish translation , thanks to Andrew Kurtis ~ webhostinghub.com "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Better excerpt cropping algorithm"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor bug fix"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add options to disable readmore. "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix remove / add image in excerpt option"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add better handling for image"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add strip element, for better excerpt"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improve regex handling, add rules for  and <a></a>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "return real excerpt from the post if it is exist"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix Compability with PHP 5.4"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add option to keep / preserve the image"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Excerpt now preserve word"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tested on WP 3.6 !"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Custom Read More Text"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bugfix on incorect header"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "First Release"
+msgstr ""
