@@ -44,7 +44,7 @@ RewriteCond %{ENV:REDIRECT_STATUS} 200
 RewriteRule .* - [L]
 
 <Files *.mp3>
-SetEnv no-gzip 
+SetEnv no-gzip
 </Files>
 
 <FilesMatch "\.(ttf|ttc|otf|eot|woff|svg|pfa|ps)$">
@@ -55,7 +55,7 @@ SetEnv no-gzip
     </IfModule>
 </FilesMatch>
 
-RewriteCond %{HTTP_USER_AGENT} libwww-perl.* 
+RewriteCond %{HTTP_USER_AGENT} libwww-perl.*
 RewriteRule .* – [F,L]
 
 #Force www:
@@ -240,10 +240,10 @@ Redirect 301	/cpa-requirements/Utah	https://www.cpaexamguide.com/cpa-exam-requir
 Redirect 301	/state-cpa-requirements https://www.cpaexamguide.com/cpa-exam-application-process
 redirect 301    /side-by-side-comparison   https://www.cpaexamguide.com/best-cpa-review-courses
 
-redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_becker https://www.cpaexamguide.com/review-courses/becker 
-redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_cpaexcel https://www.cpaexamguide.com/review-courses/wiley-cpaexcel 
-redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_fastforward https://www.cpaexamguide.com/review-courses/fast-forward-academy 
-redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_gleim https://www.cpaexamguide.com/review-courses/gleim 
+redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_becker https://www.cpaexamguide.com/review-courses/becker
+redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_cpaexcel https://www.cpaexamguide.com/review-courses/wiley-cpaexcel
+redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_fastforward https://www.cpaexamguide.com/review-courses/fast-forward-academy
+redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_gleim https://www.cpaexamguide.com/review-courses/gleim
 redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_lambers https://www.cpaexamguide.com/review-courses/lambers
 redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_mds https://www.cpaexamguide.com/review-courses/steve-martin-mds
 redirect 301    /cpa_faq/cpa_review_courses/index_cpa_faq_reviewcourses_rogers https://www.cpaexamguide.com/review-courses/roger
