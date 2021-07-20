@@ -59,9 +59,6 @@ ExpiresDefault "access 1 week"
 </IfModule>
 ## EXPIRES CACHING ##
 
-# Use PHP7 as default
-            AddHandler application/x-httpd-php70 .php
-			AddHandler application/x-httpd-php70 .htm .html
 
 
 
@@ -107,6 +104,7 @@ redirect 301 /learn/cpa-exam-worth/ https://www.cpaexamguide.com/cpa-exam-worth-
 redirect 301 /learn/my-cpa-story/ https://www.cpaexamguide.com/retake-failed-cpa-exam-section
 redirect 301 /learn/podcast/  https://www.cpaexamguide.com/21-cpa-exam-study-tips-and-strategies
 redirect 301 /learn/auditors-guide-to-travel/  https://www.cpaexamguide.com/21-cpa-exam-study-tips-and-strategies
+
 
 
 ErrorDocument 404 http://www.cpaexamguide.com/
