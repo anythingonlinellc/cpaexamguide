@@ -45,17 +45,8 @@
 
     
     <link href="https://www.cpaexamguide.com/images/logo/favicon.png" rel="icon" type="image/png" />
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	      <!-- / Leadpages -->
-      <script async src="https://www.cpaexamguide.com/js/default-script.js"></script>
-
-    
-    <!-- Custom minify CSS -->
-   <link rel="preload" href="https://www.cpaexamguide.com/fonts/ionicons.ttf?v=1.5.2" as="font" crossorigin="anonymous" />
-	  <link rel="preload" href="https://www.cpaexamguide.com/fonts/glyphicons-halflings-regular.woff" as="font" crossorigin="anonymous" />
-	  <link href="/css/style.css" rel="stylesheet">
-
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script defer src="https://www.cpaexamguide.com/js/default-script.js"></script>
  
 	  <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -64,12 +55,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NRCGGTD');</script>
 <!-- End Google Tag Manager -->
-	  
-	  
-  	  <!-- RightMessage -->
 
-	  
-<script type="text/javascript">!function(e,t){(e=t.createElement("script")).src="https://cdn.convertbox.com/convertbox/js/embed.js",e.id="app-convertbox-script",e.async=true,e.dataset.uuid="5a2718aa-59fb-4577-99aa-9d301a82bebd",document.getElementsByTagName("head")[0].appendChild(e)}(window,document);</script>
+
    
     <!-- TemplateBeginEditable name="head" -->
     <!-- TemplateEndEditable -->
@@ -186,7 +173,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <ul class="blog-post-info list-inline">
                       <li><i class="icon ion-ios7-calendar-outline"></i>Fev 21, 2014</li>
                       <li><i class="icon ion-ios7-person-outline"></i>Johnny Doe</li>
-                      <li><i class="icon ion-ios7-pricetag-outline"></i><a href="#">Lorem</a></li>
+                      <li>❯<a href="#">Lorem</a></li>
                     </ul>
                     <div class="flex-arrow-slider">
                       <ul class="slides">
@@ -215,7 +202,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <!-- /region -->
             </div>
           <!-- TemplateEndEditable --><!-- /main-content-region --><!-- TemplateBeginEditable name="sidebar" -->
-            <div id="sidebar-second-region" class="sidebar-second region-50 block-30 col-xs-12 col-md-3 float-right">
+            <div id="sidebar-second-region" class="sidebar-second region-50 block-30 col-xs-12 col-md-3 float-right state-button-center">
               <div class="region">
                 <div id="text-widget-block" class="block" style="background-color:#008ffe">
                   <h5 class="block-title"><a href="#cbd11ed34c" target="_blank"><img src="https://www.cpaexamguide.com/images/side-bar-optin.jpg" alt="" width="225" height="225" class="img-responsive"/></a><br>
@@ -380,10 +367,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <!-- End of Back to top button -->
-    
-    <!-- jQuery 1.10.2 -->
 
-    <!-- jQuery Plugins -->
+<!-- delay non-critical css load -->
+<link rel="preload" href="https://www.cpaexamguide.com/css/style.css" type="text/css" as="style" onload="this.onload=null; this.rel='stylesheet'; "/>
+	  
+<script type="text/javascript">!function(e,t){(e=t.createElement("script")).src="https://cdn.convertbox.com/convertbox/js/embed.js",e.id="app-convertbox-script",e.async=true,e.dataset.uuid="5a2718aa-59fb-4577-99aa-9d301a82bebd",document.getElementsByTagName("head")[0].appendChild(e)}(window,document);</script>
   
 	  
 
